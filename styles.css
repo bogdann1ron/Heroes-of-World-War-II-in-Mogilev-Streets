@@ -1,0 +1,243 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	height: 100%;
+}
+
+.header {
+    height: 297px;
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.topmenu {
+    height: 30px;
+    background: #1c4f86;
+    text-align: center;
+    padding-top: 7px;
+}
+.topmenu a {
+    font-family: 'Russo One', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    margin: 5px 100px 10px 100px;
+    text-decoration: none;
+}
+.title {
+	height: 190px;
+	background: url(https://34travel.me/media/posts/5b9913e9d6678-mogilev940.jpg);
+	background-position: center;
+}
+.alphabetmenu {
+    height: 48px;
+    background: none;
+    padding: 0 0 0 15px;
+    background-color: #1f5792;
+}
+.alphabetmenu img{
+	float: left;
+}
+
+
+.middle {
+	height: 100%;
+	min-height: 450px;
+	width: 1300px;
+	margin: 0 auto;
+}
+
+.street-photo {
+	width: 450px;
+	min-height: 400px;	
+	float: left;
+	text-align: center;
+	margin-top: 30px;
+	padding: 0px;
+	
+}
+.street-photo img {
+    width: 250px;
+    border: 3px solid #1f5792;
+    border-radius: 5px;
+    padding: 3px;
+	/* РћС‚СЃС‚СѓРї СЃРѕ РІСЃРµС… СЃС‚РѕСЂРѕРЅ */		
+}
+.street-text {
+	min-height: 400px;
+	width: 850px;
+	margin: 30px 0 0 450px;  /*РћС‚СЃС‚СѓРї РѕС‚ Р»РµРІРѕРіРѕ РєСЂР°СЏ */
+	text-align: justify;
+}
+.street-text h1 {
+	font-family: 'Russo One', sans-serif;
+	font-size: 30px;
+	color: #1f5792;
+	margin-bottom: 20px;
+}
+.street-text h2 {
+	font-family: 'Russo One', sans-serif;
+	font-size: 18px;
+	color: #252525;
+	margin: 10px 0 10px 0;
+}
+
+.map {
+    height: 555px;
+    background: none;
+    text-align: center;
+    padding: 45px 0 0px 0;
+    margin: 10px 0 30px 0;
+    background-color: #c3c3c3dd;
+}
+.map h1 {
+	font-family: 'Russo One', sans-serif;
+	font-size: 30px;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	margin-bottom: 20px;
+}
+.map h2 {
+	font-family: 'Russo One', sans-serif;
+	font-size: 20px;
+	color: black;
+	margin: 10px 0 10px 0;
+}
+
+.list {
+	margin-bottom: 30px;
+}
+
+/* РЎРћР РўРР РћР’РђРќРќР«Р™ РЎРџРРЎРћРљ */
+.list ol{
+  counter-reset: myCounter;
+}
+
+.list li{
+  list-style: none;
+}
+
+.list li:before {
+  counter-increment: myCounter;
+  content:counter(myCounter);
+  color: white;
+  background: #1f5792;
+  display: inline-block;
+  text-align: center;
+  margin: 5px 20px;
+  line-height: 20px;
+  width: 22px;
+  height: 22px;
+}
+.list a{
+	color: #1f5792;
+	text-decoration: none;
+	background: url(images/icon-link.png) no-repeat 0% 0;
+	padding-left: 30px;
+
+}
+.list a:hover{
+	border-bottom:1px dotted;
+}
+.list ul {
+	list-style-image: url(images/icon_check.png);
+	margin-left: 0px;
+}
+.list h2 {
+	font-family: 'Russo One', sans-serif;
+	font-size: 20px;
+	color: black;
+	margin: 10px 0 10px 0;
+}
+
+
+.simplearea {
+	/*height: 555px;*/
+	text-align: justify;
+	padding: 45px 50px;
+	margin: 10px 0 30px 0;
+	background: url(images/simple-bg.jpg) bottom no-repeat;
+}
+.simplearea h1 {
+    font-family: 'Russo One', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: #1f5792;
+    margin: 10px 0 10px 0;
+    text-align: center;
+    text-align: left;
+    position: relative;
+    top: 50px;
+}
+.simplearea h2{
+	font-family: 'Russo One', sans-serif;
+	font-weight: 400;
+	font-size: 40px;
+	color: #1f5792;  
+	margin: 10px 0 10px 0;	
+	text-align: center;
+}
+.simplearea h3{
+	font-family: 'Russo One', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #1f5792;  
+	margin: 10px 0 10px 0;	
+	text-align: center;
+}
+.simplearea a {
+	color: black;
+	text-decoration: none;
+	font-family: 'Russo One', sans-serif;
+	font-size: 16px;
+	color: black;
+	/*background: url(images/icon-link.png) no-repeat 0% 0;
+	padding-left: 30px;*/
+}
+.simplearea a:hover{
+	border-bottom:1px dotted #1f5792;
+}
+.simplearea ul {
+	list-style: none;
+	padding: 0 30px 50px 30px;
+	text-align: center;
+	position: relative;
+
+}
+.simplearea li {
+    display: inline; /* РћС‚РѕР±СЂР°Р¶Р°С‚СЊ РєР°Рє СЃС‚СЂРѕС‡РЅС‹Р№ СЌР»РµРјРµРЅС‚ */
+    margin-right: 15px; /* РћС‚СЃС‚СѓРї СЃР»РµРІР° */
+    /*border: 1px solid #000;  Р Р°РјРєР° РІРѕРєСЂСѓРі С‚РµРєСЃС‚Р° */
+    padding: 5px; /* РџРѕР»СЏ РІРѕРєСЂСѓРі С‚РµРєСЃС‚Р° */	
+}
+
+
+
+.footer {
+	height: 70px;
+	width: 1300px;
+	padding-top: 35px;
+    background-color: #1f5792;
+
+	text-align: center;
+	/*font-family: 'Russo One', sans-serif;*/
+	font-size: 14px;
+	color:#b5b6b5;
+}
+.footer a{
+	color: #ffffff;
+	text-decoration: none;	
+}
+.footer a:hover{
+	border-bottom: 1px dotted;
+}
